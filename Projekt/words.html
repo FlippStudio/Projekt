@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/word.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<body class="container-fluid">
+  <canvas id="nokey" width="100%" height="100vh">
+      Your Browser Don't Support Canvas, Please Download Chrome ^_^``
+  </canvas>
+  <!--    NAV   -->
+  <nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top navbar-fixed" id="navMain">
+      <a class="navbar-brand" href="index.html"><img src="#" alt="logo" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBtns" ><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-md-end" id="navBtns">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link navpos" id="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="signIn">Sing In</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="signUp" >Sing Up</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link navpos" id="contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="quiz.html" class="nav-link navpos" id="quiz">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a href="words.html" class="nav-link navpos" id="words">Words</a>
+          </li>
+          <li class="nav-item" id="accountNav">
+            <div class="btn-group">
+  <a class="nav-link navpos" href="#">UserName</a><br /><br />
+  <a href="#" id="user" class="btn btn-lg dropdown-toggle dropdown-toggle-split slide-dropdown-nav" data-toggle="dropdown">
+  <span class="sr-only" >Toggle Dropdown</span>
+  </a>
+  <div class="dropdown-menu dropdown-menu-right">
+  <a class="dropdown-item" href="settings.html" id="settings">Settings</a>
+  <a class="dropdown-item text-warning" href="adminPanel.html" id="adminPanel">Admin panel</a>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item text-danger" id="signOut" href="#">Sign out</a>
+  </div>
+  </div>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <div class="row">
+    <div class="col-xl-12 list">
+      <form class="form-control">
+      <select class="custom-select">
+        <option selected>Select chapter and subject</option>
+        <optgroup label="Chapter 1">
+          <option value="c1s1">Subject 1</option>
+          <option value="c1s2">Subject 2</option>
+          <option value="c1s3">Subject 3</option>
+          <option value="c1s4">Subject 4</option>
+        </optgroup>
+        <optgroup label="Chapter 2">
+          <option value="c2s1">Subject 1</option>
+          <option value="c2s2">Subject 2</option>
+          <option value="c2s3">Subject 3</option>
+          <option value="c2s4">Subject 4</option>
+        </optgroup>
+        <optgroup label="Chapter 3">
+          <option value="c3s1">Subject 1</option>
+          <option value="c3s2">Subject 2</option>
+          <option value="c3s3">Subject 3</option>
+          <option value="c3s4">Subject 4</option>
+        </optgroup>
+        <optgroup label="Chapter 4">
+          <option value="c4s1">Subject 1</option>
+          <option value="c4s2">Subject 2</option>
+          <option value="c4s3">Subject 3</option>
+          <option value="c4s4">Subject 4</option>
+        </optgroup>
+      </select>
+    </form>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-xl-1"></div>
+      <div class="col-xl-4 word">
+        <table class="table table-hover">
+          <thead class="thead-inverse">
+            <tr>
+              <th>#</th>
+              <th>Angielski</th>
+              <th>Polski</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Personal Computer</td>
+              <td>Komputer osobisty</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Graphic card</td>
+              <td>Karta graficzna</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-xl-2"></div>
+      <div class="col-xl-4 word">
+        <table class="table table-hover">
+          <thead class="thead-inverse">
+            <tr>
+              <th>#</th>
+              <th>Angielski</th>
+              <th>Polski</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Personal Computer</td>
+              <td>Komputer osobisty</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Graphic card</td>
+              <td>Karta graficzna</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+    <script>
+      $(".navbar-fixed-top").autoHidingNavbar();
+    </script>
+    <script src="js/canvas.js"></script>
+</body>
+</html>

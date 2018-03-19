@@ -1,0 +1,36 @@
+.word
+{
+  min-height: 70vh;
+  background-color: #fff;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+
+.list
+{
+  padding-top: 5%;
+  text-align: center;
+
+}
+
+.form-control
+{
+  background: none;
+  border: 0;
+}
+
+canvas
+{
+  z-index: 0;
+  position: fixed;
+}
+
+.body
+{
+  min-width: 100vh;
+}
+
+table
+{
+  text-align: center;
+}

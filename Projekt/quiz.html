@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
+    <link rel="stylesheet" href="css/mainpanel.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<body>
+  <canvas id="nokey" width="100%" height="100vh">
+      Your Browser Don't Support Canvas, Please Download Chrome ^_^``
+  </canvas>
+  <!--    NAV   -->
+  <nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top navbar-fixed justify-content-center" id="navMain">
+      <a class="navbar-brand" href="index.html" id="logo"><img src="#" alt="logo" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBtns" ><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-md-end" id="navBtns">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link navpos" id="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="signIn">Sing In</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="signUp" >Sing Up</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link navpos" id="contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="quiz.html" class="nav-link navpos" id="quiz">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a href="words.html" class="nav-link navpos" id="words">Words</a>
+          </li>
+          <li class="nav-item" id="accountNav">
+            <div class="btn-group">
+  <a class="nav-link navpos" href="#">UserName</a><br /><br />
+  <a href="#" id="user" class="btn btn-lg dropdown-toggle dropdown-toggle-split slide-dropdown-nav" data-toggle="dropdown">
+  <span class="sr-only" >Toggle Dropdown</span>
+  </a>
+  <div class="dropdown-menu dropdown-menu-right">
+  <a class="dropdown-item" href="settings.html" id="settings">Settings</a>
+  <a class="dropdown-item text-warning" href="adminPanel.html" id="adminPanel">Admin panel</a>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item text-danger" id="signOut" href="#">Sign out</a>
+  </div>
+  </div>
+          </li>
+        </ul>
+      </div>
+  </nav>
+        <div id="barSlide">
+        </div>
+      <div id="chapNav">
+        <div class="list-group">
+          <button class="list-group-item">
+            Select your subject:
+          </button>
+          <div class="list-group-item">Chapter 1:
+            <div class="progress">
+              <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning"></div>
+            </div>
+          <div class="list-group">
+            <div class="list-group-item list-group-item-success" id="1.1">Subject 1:</div>
+            <div class="list-group-item list-group-item-success" id="1.2">Subject 2:</div>
+            <div class="list-group-item list-group-item-success" id="1.3">Subject 3:</div>
+            <div class="list-group-item list-group-item-success" id="1.4">Subject 4:</div>
+            <div class="list-group-item list-group-item-warning">Random question</div>
+          </div>
+          </div>
+          <div class="list-group-item">Chapter 2:
+            <div class="progress">
+              <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning"></div>
+            </div>
+            <div class="list-group">
+            <div class="list-group-item list-group-item-success">Subject 1:</div>
+            <div class="list-group-item">Subject 2:</div>
+            <div class="list-group-item">Subject 3:</div>
+            <div class="list-group-item">Subject 4:</div>
+            <div class="list-group-item list-group-item-warning">Random question</div>
+          </div></div>
+          <div class="list-group-item">Chapter 3:
+            <div class="progress">
+              <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning"></div>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">Subject 1:</div>
+              <div class="list-group-item">Subject 2:</div>
+              <div class="list-group-item">Subject 3:</div>
+              <div class="list-group-item">Subject 4:</div>
+              <div class="list-group-item list-group-item-warning">Random question</div>
+            </div></div>
+          <div class="list-group-item">Chapter 4:
+            <div class="progress">
+              <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning"></div>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">Subject 1:</div>
+              <div class="list-group-item">Subject 2:</div>
+              <div class="list-group-item">Subject 3:</div>
+              <div class="list-group-item">Subject 4:</div>
+              <div class="list-group-item list-group-item-warning">Random question</div>
+            </div></div>
+          <div class="list-group-item">Chapter 5:
+            <div class="progress">
+              <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning"></div>
+            </div>
+          <div class="list-group">
+            <div class="list-group-item">Subject 1:</div>
+            <div class="list-group-item">Subject 2:</div>
+            <div class="list-group-item">Subject 3:</div>
+            <div class="list-group-item">Subject 4:</div>
+            <div class="list-group-item list-group-item-warning">Random question</div>
+          </div>
+          </div>
+        </div>
+      </div><div class="container-fluid">
+
+
+<div class="row justify-content-md-between">
+
+  <div class="col-xl-5 col-lg-5 col-md-10 col-sm-10 col-10 offset-1 " id="excercises">
+    <ul class="nav nav-tabs bookmark">
+      <li class="nav-item "><a class="nav-link bg-primary active" data-toogle="tab" href="#z1" role="tab" id="o1">1.</a></li>
+      <li class="nav-item"><a class="nav-link bg-success" data-toogle="tab" href="#z2" role="tab" id="o2">2.</a></li>
+      <li class="nav-item"><a class="nav-link bg-warning" data-toogle="tab" href="#z3" role="tab" id="o3">3.</a></li>
+      <li class="nav-item"><a class="nav-link bg-danger" data-toogle="tab" href="#finish" role="tab" id="podsum">Finish</a></li>
+    </ul><div class="tab-content">
+    <div class="task form-group tab-pane fade show active select" role="tabpanel" id="z1">
+      <label for="question">Excercise 1</label>
+          <h3>Where was Hitler born?</h3>
+      <ol>
+        <div class="form-check">
+          <li><label class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" value="A" name="ex">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Germany</span></label>
+          </li>
+        </div>
+
+        <div class="form-check">
+          <li><label class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" value="B" name="ex">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Poland</span></label>
+          </li>
+        </div>
+
+        <div class="form-check">
+          <li><label class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" value="C" name="ex">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Austria</span></label>
+          </li>
+        </div>
+
+          <div class="form-check">
+            <li><label class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" value="D" name="ex">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Uganda</span></label>
+            </li>
+          </div>
+        </ol>
+    <a class="btn btn-primary select" data-toogle="tab" role="tab" href="#o2">Next question</a><br />
+  </div>
+<div class="task tab-pane fade" role="tabpanel" id="z2">
+  <label for="question">Excercise 2</label>
+      <h3>Where was Hitler born?</h3>
+  <ol>
+    <div class="form-check">
+      <li><label class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" value="A" name="ex">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Germany</span></label>
+      </li>
+    </div>
+
+    <div class="form-check">
+      <li><label class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" value="B" name="ex">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Poland</span></label>
+      </li>
+    </div>
+
+    <div class="form-check">
+      <li><label class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" value="C" name="ex">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Austria</span></label>
+      </li>
+    </div>
+
+      <div class="form-check">
+        <li><label class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" value="D" name="ex">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Uganda</span></label>
+        </li>
+      </div>
+    </ol>
+<a class="btn btn-primary select" data-toogle="tab" role="tab" href="#o3">Next question</a><br />
+</div>
+<div class="task tab-pane fade" role="tabpanel" id="z3"><label for="question">Excercise 3</label>
+    <h3>Where was Hitler born?</h3>
+<ol>
+  <div class="form-check">
+    <li><label class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" value="A" name="ex">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Germany</span></label>
+    </li>
+  </div>
+
+  <div class="form-check">
+    <li><label class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" value="B" name="ex">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Poland</span></label>
+    </li>
+  </div>
+
+  <div class="form-check">
+    <li><label class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" value="C" name="ex">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Austria</span></label>
+    </li>
+  </div>
+
+    <div class="form-check">
+      <li><label class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" value="D" name="ex">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Uganda</span></label>
+      </li>
+    </div>
+  </ol>
+<a class="btn btn-primary select" data-toogle="tab" role="tab" href="#podsum">Next question</a><br /></div>
+<div class="task tab-pane fade" role="tabpanel" id="finish"><h1>Finish this subject</h1>
+<a class="btn btn-primary" href="#o">Here</a></div>
+</div>
+
+
+
+
+
+</div>
+  <br />
+
+  <div class="col-xl-4 col-lg-4 col-md-10 col-sm-10 col-10 offset-1 ">
+    <ul class="nav nav-tabs none">
+      <li class="nav-item "><a class="nav-link bg-primary active" data-toogle="tab" href="#z1n" role="tab" id="o1n">1.</a></li>
+      <li class="nav-item"><a class="nav-link bg-success" data-toogle="tab" href="#z2n" role="tab" id="o2n">2.</a></li>
+      <li class="nav-item"><a class="nav-link bg-warning" data-toogle="tab" href="#z3n" role="tab" id="o3n">3.</a></li>
+      <li class="nav-item"><a class="nav-link bg-danger" data-toogle="tab" href="#finishn" role="tab" id="podsumn">Finish</a></li>
+    </ul><div class="tab-content">
+
+
+    <div class="notes form-group tab-pane fade show active select" role="tabpanel" id="z1n">
+      <img src="img/bg1.jpg" alt="#">
+      <audio src="sound/Breeze.mp3" controls>Your Browser does not support the audio element</audio>
+    </div >
+    <div class="notes form-group tab-pane fade select" role="tabpanel" id="z2n">
+    </div>
+    <div class="notes form-group tab-pane fade select" role="tabpanel" id="z3n">
+    </div>
+    <div class="notes form-group tab-pane fade select" role="tabpanel" id="finishn">
+    </div>
+  </div>
+    </div>
+  <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
+</div>
+      </div>
+    <script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+    <script>
+      $(".navbar-fixed-top").autoHidingNavbar();
+    </script>
+    <script src="js/canvas.js"></script>
+    <script src="js/chapnav.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
